@@ -1,0 +1,39 @@
+.titulo-modulo {
+    font-size: 13px;
+    margin-top: 19px;
+}
+
+.ant-table-thead th {
+    font-size: 10px;
+    background-color: #F0F0F0 !important;
+}
+
+.ant-table-tbody td {
+    font-size: 13px; 
+}
+
+/*Boton exportar a excel*/
+.btn-export {
+    border-radius: 0px;
+    width: 100px;
+}
+
+.btn-export-contenedor {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    margin-top: -5px;
+}
+
+/*Ancho columnas tabla para exportar*/
+.col-producto-ancho {
+    width: 220px;
+}
+
+.col-asunto-ancho {
+    width: 220px;
+}
+
+.col-creacion-ancho {
+    width: 150px;
+}
