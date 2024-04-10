@@ -9,12 +9,9 @@ function BtnExcel({columns, dataSource, saveAsName}) {
   const timestamp = Date.now();
 
     const handleClick = () => {
-
-        // for (const cliente of dataSource) {
-        //     if(!Number.isInteger(parseInt(cliente.cuenta))){
-        //         cliente.cuenta = "LEAD";
-        //     }
-        // }
+        // console.log('columns',columns)
+        // console.log('dataSource', dataSource)
+        
         const excel = new Excel();
         excel
           .addSheet("Hoja 1")

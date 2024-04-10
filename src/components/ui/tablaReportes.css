@@ -9,7 +9,7 @@
 }
 
 .ant-table-tbody td {
-    font-size: 13px; 
+    font-size: 13px;
 }
 
 /*Boton exportar a excel*/
@@ -27,13 +27,50 @@
 
 /*Ancho columnas tabla para exportar*/
 .col-producto-ancho {
-    width: 220px;
-}
-
-.col-asunto-ancho {
-    width: 220px;
+    width: 150px;
 }
 
 .col-creacion-ancho {
     width: 150px;
+}
+
+/* Buscador por columna */
+.input-buscador {
+    width: 188px;
+    margin-bottom: 8px;
+    display: block;
+    border-radius: 2px;
+}
+
+.input-buscador:hover {
+    border-color: #00B33C;
+}
+
+.input-buscador:focus {
+    border-color: #00B33C;
+}
+
+.btn-buscador {
+    width: 90px;
+    border-radius: 2px;
+    background-color: #00B33C;
+}
+
+.btn-buscador:hover {
+    background-color: #78c25f !important;
+}
+
+.btn-reset {
+    width: 90px;
+    border-radius: 2px;
+}
+
+.btn-reset:hover {
+    color: #00B33C !important;
+    background-color: transparent !important;
+    border-color: #00B33C !important;
+}
+
+.search-icon:hover {
+    color: #00B33C !important;
 }
