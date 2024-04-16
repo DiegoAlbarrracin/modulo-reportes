@@ -19,6 +19,7 @@ function TablaReportes() {
 
     const URL = process.env.REACT_APP_URL;
     const dateFormat = "DD/MM/YYYY";
+    const idU = localStorage.getItem("usuario");
 
     const [tableData, setTableData] = useState([]);
 
@@ -39,7 +40,16 @@ function TablaReportes() {
     };
 
     const fetchDataProdxNeg = async () => {
-        const data = await fetch(`${URL}rep_getProdxNeg.php`);
+
+        const dataForm = new FormData();
+        dataForm.append("idU", idU);
+
+        const requestOptions = {
+            method: 'POST',
+            body: dataForm
+        };
+
+        const data = await fetch(`${URL}rep_getProdxNeg.php`, requestOptions);
         const jsonData = await data.json();
 
         setTableData(jsonData.map((item, index) => {
@@ -119,7 +129,6 @@ function TablaReportes() {
             dataIndex: "valor",
             key: "valor",
             align: "right",
-            width: "50px"
         },
         {
             title: "TOTAL",

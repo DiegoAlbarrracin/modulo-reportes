@@ -5,6 +5,8 @@ import TablaReportes from "./components/ui/TablaReportes";
 import { useState } from 'react';
 import esES from "antd/lib/locale/es_ES";
 
+console.log('version modulo-reportes 15.04.24.2')
+
 function App() {
   return (
     <GlobalContext.Provider value={{  }} >
